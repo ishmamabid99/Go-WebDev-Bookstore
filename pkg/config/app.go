@@ -8,7 +8,7 @@ import (
 var db *gorm.DB
 
 func Connect() {
-	DSN := "ishmam:ishmam@99@/simplerest?charset=utf8mb4&parseTime=True&loc=Local"
+	DSN := "root:password@(localhost)/simplerest?charset=utf8&parseTime=True&loc=Local"
 	d, err := gorm.Open("mysql", DSN)
 	if err == nil {
 		db = d
